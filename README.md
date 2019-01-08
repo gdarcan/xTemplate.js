@@ -87,6 +87,7 @@ By the way, this <u>currently</u> suits best to pure javascripters and for those
     tpl.out('main.list','#content');
 
 **output.html** will look like this
+
     <!-- HTML stuff here head body etc. -->
     <script src="someFrontendJavascript.js></script>
     <div id="content">
@@ -113,4 +114,3 @@ By the way, this <u>currently</u> suits best to pure javascripters and for those
                 </tbody>
             </table>
     </div>
-    
