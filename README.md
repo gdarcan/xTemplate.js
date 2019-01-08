@@ -86,31 +86,41 @@ By the way, this <u>currently</u> suits best to pure javascripters and for those
     tpl.parse('main.list');
     tpl.out('main.list','#content');
 
-**output.html** will look like this
+**output.html** originally
 
     <!-- HTML stuff here head body etc. -->
+    <div id="content"></div>
     <script src="someFrontendJavascript.js></script>
+    <!-- closing of body html etc and your other stuff -->
+
+
+
+**output.html** after script run
+
+    <!-- HTML stuff here head body etc. -->
     <div id="content">
-            <h2>Users Page</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <td>ID</td>
-                        <td>Username</td>
-                        <td>City</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>John</td>
-                        <td>New York</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Doe</td>
-                        <td>Paris</td>
-                    </tr>
-                </tbody>
-            </table>
+        <h2>Users Page</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Username</td>
+                    <td>City</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John</td>
+                    <td>New York</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Doe</td>
+                    <td>Paris</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+    <script src="someFrontendJavascript.js></script>
+    <!-- closing of body html etc and your other stuff -->
