@@ -1,5 +1,7 @@
 # xTemplate.js
 
+*source code is coming soon*
+
 ## What is xTemplate.js
 
 xTemplate.js is a rewritten PHP xTemplate class, works nearly same as PHP version. I really don't know if there were another features which I didn't implement, but suits for all of my needs. Works very well on single page web apps, hybrid mobile apps or anywhere you want.
