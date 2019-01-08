@@ -20,9 +20,19 @@ By the way, this <u>currently</u> suits best to pure javascripters and for those
 
 ### How to use
 
-    // Here is your logic (you pulled users [probably json format] from server,
-    // and it is now array of user objects at a variable: users
-    var users = [{id: 1, name: "John"},{id: 2, name: "Doe"}];
+    // Here comes your logic:
+    // You pull users (probably json format) from server,
+    // and now it is an array of user objects like below
+    var users = [
+        {
+            id: 1,
+            name: "John"
+        },
+        {
+            id: 2,
+            name: "Doe"
+        }
+    ];
     var tpl = new xTemplate('tpl/users.html');
     users.forEach(function(user) {
         tpl.assign('user',user);
