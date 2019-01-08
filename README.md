@@ -20,6 +20,29 @@ By the way, this <u>currently</u> suits best to pure javascripters and for those
 
 ### How to use
 
+**tpl/users.html**
+
+    <!-- BEGIN: main -->
+    
+        <!-- BEGIN: list -->
+
+            <!-- BEGIN: user -->
+            <div class="row">
+                <div class="col lg-6">{user.id}</div>
+                <div class="col lg-6">{user.name}</div>
+            </div>
+            <!-- END: user -->
+
+        <!-- END: list -->
+
+        <!-- BEGIN: add_edit -->
+        Here is your add/edit form
+        <!-- END: add_edit -->
+    
+    <!-- END: main -->
+
+**someFrontendJavascript.js**
+
     // Here comes your logic:
     // You pull users (probably json format) from server,
     // and now it is an array of user objects like below
