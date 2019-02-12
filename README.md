@@ -88,7 +88,7 @@ By the way, this <u>currently</u> suits best to pure javascripters and for those
     tpl.parse('main.list');
     tpl.out('main.list','#content');
 
-**output.html** originally
+DOM originally
 
     <!-- HTML stuff here head body etc. -->
     <div id="content"></div>
@@ -97,7 +97,7 @@ By the way, this <u>currently</u> suits best to pure javascripters and for those
 
 
 
-**output.html** after script run
+DOM after script run
 
     <!-- HTML stuff here head body etc. -->
     <div id="content">
