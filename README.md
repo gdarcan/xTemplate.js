@@ -4,17 +4,19 @@
 
 ## What is xTemplate.js
 
-xTemplate.js is a rewritten PHP xTemplate class, works nearly same as PHP version. I really don't know if there were another features which I didn't implement, but suits for all of my needs. Works very well on single page web apps, hybrid mobile apps or anywhere you want.
+xTemplate.js is a rewritten PHP xTemplate class (read 3rd paragraph), works nearly same as PHP version. I really don't know if there were another features which I didn't implement, but suits for all of my needs and I hope it also suits your needs. Works very well on single page web apps, hybrid mobile apps, PWA's or anywhere you want.
 
-Who doesn't know about PHP xTemplate, this is a class simply for templating front end pages and separating designer and developer or view and controller. Frontend developer creates .html (or any extension) files, backend or (nodejs) developer uses the template to generate the resulting page. It is in active development as of June 8, 2019.
+Code is not-state-of-the-art piece and I have a feeling that it works fast enough. I didn't make any benchmarking. Also it works at backend nodejs or fronted. Uses fs at node and xhr at frontend. Doesn't work asynchronously to read/download template file so, if you have a large template file, better to read at start/onload and have it cached to respond faster to requests.
 
-By the way, this <u>currently</u> suits best to pure javascripters and for those who remembers PHP xtemplate class. Exactly for oldschool people (like me). Works mostly similar as it was in PHP. What I code in the class maybe full of shi*, maybe not. Works unbelievably fast and eases my own work. Who wants to make it cleaner, faster; commitments, additions, deletions, fixes to my code are welcome. I successfully used this class on 3 different projects without problems.
+BTW, who doesn't know about PHP xTemplate, this is a class simply for templating front end pages and separating designer and developer or view and controller. Frontend developer creates .html (or any extension) files, backend or (nodejs) developer or frontend javascript developer uses that template to generate the resulting page. xTemplate.sj is in active development as of February 13, 2019.
+
+If you wanna contribute to make it cleaner, faster, more compatible etc... you're welcome.
 
 ## Features
 
 * String assignment
-* Object assignment
-* Template File Caching
+* Object assignment //TODO recursion inside object's objects
+* Template File Caching (not to read the same file again till restart/reload)
 * global (or window) String and Object automatic assignment (this eases the most of the work)
 * Partial parsing of template (you can put list page, edit page into same template file)
 * Direct parse output to selector (first) or append to selector (first) (.out function)
@@ -126,3 +128,7 @@ DOM after script run
     </div>
     <script src="someFrontendJavascript.js></script>
     <!-- closing of body html etc and your other stuff -->
+
+### Advanced Scenario
+
+...coming soon
