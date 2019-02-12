@@ -24,7 +24,7 @@ If you wanna contribute to make it cleaner, faster, more compatible etc... you'r
 
 ## How to use
 
-### Basic Scenario
+### General Usage Scenario
 
 **tpl/users.html**
 
@@ -84,7 +84,7 @@ If you wanna contribute to make it cleaner, faster, more compatible etc... you'r
     var tpl = new xTemplate('tpl/users.html');
     tpl.assign('page_title','Users Page');
     users.forEach(function(user) {
-        tpl.assign('obj',user);
+        tpl.assign('userObj', user);
         tpl.parse('main.list.user');
     });
     tpl.parse('main.list');
@@ -96,8 +96,6 @@ DOM originally
     <div id="content"></div>
     <script src="someFrontendJavascript.js></script>
     <!-- closing of body html etc and your other stuff -->
-
-
 
 DOM after script run
 
@@ -128,7 +126,3 @@ DOM after script run
     </div>
     <script src="someFrontendJavascript.js></script>
     <!-- closing of body html etc and your other stuff -->
-
-### Advanced Scenario
-
-...coming soon
